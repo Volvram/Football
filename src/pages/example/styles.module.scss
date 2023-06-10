@@ -1,0 +1,17 @@
+.example {
+    &_body {
+        margin: auto;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            width: fit-content;
+        }
+
+        &_back {
+            width: fit-content;
+        }
+    }
+}
