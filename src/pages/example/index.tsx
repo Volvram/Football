@@ -1,4 +1,4 @@
-import Meta from "@/app/meta";
+import Meta from "@/components/Meta/Meta";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 
