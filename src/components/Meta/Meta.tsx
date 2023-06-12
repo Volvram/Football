@@ -1,5 +1,5 @@
 import Head from "next/head";
-import 'normalize.css';
+import 'normalize-path/index';
 
 type MetaProps = {
     title: string,
