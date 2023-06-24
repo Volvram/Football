@@ -1,0 +1,165 @@
+@import "@/styles/variables.scss";
+
+.header {
+    background-color: $white;
+    width: 100%;
+    display: flex;
+
+    &_menu {
+        padding-top: 42px;
+        padding-bottom: 35px;
+        padding-left: 36px;
+        padding-right: 36px;
+        width: fit-content;
+        height: fit-content;
+        border-right: 1px solid $light-gray;
+    }
+
+    &_nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_sections {
+            padding: 0px 16px;
+            display: flex;
+            align-items: center;
+    
+            &_section {
+                margin: 0px 20px;
+                color: $gray;
+                font-size: $h3;
+            }
+    
+            &_section__active {
+                margin: 0px 20px;
+                color: $gray;
+            }
+        }
+    
+        &_search {
+
+            &_input {
+                min-width: 40vw;
+            }
+        }
+
+        &_icons {
+            display: flex;
+            justify-content: space-between;
+
+            &_icon {
+                margin: 0px 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $laptop) {
+    .header {
+        &_menu {
+            padding-top: 21px;
+            padding-bottom: 17px;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        &_nav {
+            &_sections {
+
+                &_section {
+                    margin: 0px 16px;
+                    font-size: $p1;
+                }
+        
+                &_section__active {
+                    margin: 0px 16px;
+                    font-size: $p1;
+                }
+            }
+
+            &_icons {
+
+                &_icon {
+                    margin: 0px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .header {
+        &_menu {
+            &_icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &_nav {
+            &_sections {
+                padding: 0px 8px;
+
+                &_section {
+                    margin: 0px 6px;
+                    font-size: $p2;
+                }
+        
+                &_section__active {
+                    margin: 0px 6px;
+                    font-size: $p2;
+                }
+            }
+
+            &_search {
+
+                &_input {
+                    padding: 8px 16px;
+                    min-width: 30vw;
+                }
+            }
+
+            &_icons {
+
+                &_icon {
+                    margin: 0px 6px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone) {
+    .header {
+        &_menu {
+            &_icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &_nav {
+            justify-content: center;
+            padding: 0px 8px;
+            &_sections {
+                display: none;
+            }
+
+            &_search {
+
+                &_input {
+                    padding: 8px 16px;
+                    min-width: 40vw;
+                }
+            }
+
+            &_icons {
+                display: none;
+            }
+        }
+    }
+}
