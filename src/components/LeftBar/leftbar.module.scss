@@ -1,0 +1,59 @@
+@import "@/styles/variables.scss";
+
+.leftbar {
+    width: 100px;
+
+    &_hr {
+        margin: 0 20%;
+        border: 1px solid $light-gray
+    }
+
+    &_sections {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_section {
+
+        }
+    }
+}
+
+@media screen and (max-width: $laptop) {
+    .leftbar {
+        width: 64px;
+
+        &_sections {
+            padding-top: 17px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .leftbar {
+        width: 56px;
+
+        &_sections {
+
+            &_section {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone) {
+    .leftbar {
+        width: 52px;
+
+        &_sections {
+
+            &_section {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

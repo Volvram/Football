@@ -10,7 +10,7 @@
         padding-bottom: 35px;
         padding-left: 36px;
         padding-right: 36px;
-        width: fit-content;
+        width: 100px;
         height: fit-content;
         border-right: 1px solid $light-gray;
     }
@@ -63,6 +63,7 @@
             padding-bottom: 17px;
             padding-left: 18px;
             padding-right: 18px;
+            width: 64px;
         }
 
         &_nav {
@@ -92,6 +93,7 @@
 @media screen and (max-width: $tablet) {
     .header {
         &_menu {
+            width: 56px;
             &_icon {
                 width: 20px;
                 height: 20px;
@@ -136,6 +138,8 @@
 @media screen and (max-width: $phone) {
     .header {
         &_menu {
+            width: 52px;
+
             &_icon {
                 width: 16px;
                 height: 16px;
