@@ -46,7 +46,6 @@
         margin-top: 40px;
         display: flex;
         flex-direction: column;
-
         &_h {
             color: $black;
             font-size: $h3;
@@ -59,8 +58,12 @@
             max-height: 40vh;
             height: fit-content;
 
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
             &_match {
-                margin-top: 10px;
                 margin-bottom: 10px;
                 padding-top: 2%;
                 padding-bottom: 2%;
