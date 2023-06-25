@@ -1,20 +1,17 @@
 import styles from './page.module.scss'
-import Link from 'next/link'
 import Header from '@/components/Header/Header'
 import LeftBar from '@/components/LeftBar/LeftBar'
+import BodyContent from './pageComponents/BodyContent/BodyContent'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.page}>
         <main className={styles.main}>
             <Header />
             <div className={styles.main_body}>
               <LeftBar />
-              <Link href="/example" style={{color: "blue", textDecoration: "underline", marginLeft: "auto", marginRight: "auto"}}>
-                Перейти на страницу пример
-              </Link>
+              <BodyContent />
             </div>
-            
         </main>
     </div>
   )

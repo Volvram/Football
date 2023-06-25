@@ -1,0 +1,43 @@
+@import "@/styles/variables.scss";
+
+.leftcontent {
+    margin-bottom: 5px;
+    padding: 38px 34px;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 13;
+    
+
+    background-color: $white;
+    border-radius: 5px;
+
+    &_h {
+        color: $black;
+        font-size: $h3;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: $laptop) {
+    .leftcontent {
+        padding: 26px 22px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .leftcontent {
+        padding: 16px 12px;
+
+        &_h {
+            font-size: $p1;
+        }
+    }
+}
+
+@media screen and (max-width: $phone) {
+    .leftcontent {
+        display: none;
+    }
+}

@@ -1,7 +1,9 @@
 @import "@/styles/variables.scss";
 
 .leftbar {
-    width: 100px;
+    width: 99px;
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
 
     &_hr {
         margin: 0 20%;
@@ -10,6 +12,7 @@
 
     &_sections {
         padding-top: 35px;
+        width: 99px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -22,19 +25,21 @@
 
 @media screen and (max-width: $laptop) {
     .leftbar {
-        width: 64px;
+        width: 63px;
 
         &_sections {
             padding-top: 17px;
+            width: 63px;
         }
     }
 }
 
 @media screen and (max-width: $tablet) {
     .leftbar {
-        width: 56px;
+        width: 55px;
 
         &_sections {
+            width: 55px;
 
             &_section {
                 width: 20px;
@@ -46,9 +51,10 @@
 
 @media screen and (max-width: $phone) {
     .leftbar {
-        width: 52px;
+        width: 51px;
 
         &_sections {
+            width: 51px;
 
             &_section {
                 width: 16px;

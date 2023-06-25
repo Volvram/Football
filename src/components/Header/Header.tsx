@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from "./header.module.scss";
 import { headerSections } from "@/config/headerSections";
 import Input from "../Input/Input";
@@ -19,7 +20,9 @@ const Header: React.FC = ()  => {
                 <div className={styles.header_nav_sections}>
                     {headerSections.map(section => {
                         return (
-                            <p key={section.id} className={styles.header_nav_sections_section}>{section.name}</p>
+                            <Link key={section.id} href="/example">
+                                <p className={styles.header_nav_sections_section}>{section.name}</p>
+                            </Link>
                         )
                     })}
                 </div>

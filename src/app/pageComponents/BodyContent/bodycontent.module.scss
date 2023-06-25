@@ -1,0 +1,18 @@
+@import "@/styles/variables.scss";
+
+.bodycontent {
+    padding: 25px;
+    width: 100%;
+    
+    background-color: $light-gray;
+    border-left: 1px solid $light-gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: $tablet) {
+    .bodycontent {
+        padding: 15px;
+    }
+}

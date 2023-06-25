@@ -5,11 +5,17 @@
 
     padding: 16px 32px;
     border-radius: 100px;
-    border: 1px solid $light-gray;
+    border: 1px solid $gray-100;
 
     background-color: inherit;
+
+    color: $gray;
 
     &_disabled {
         opacity: 0.5;
     }
 }
+
+.input::-webkit-input-placeholder {
+    color: $gray-200;
+ }
