@@ -10,14 +10,14 @@ const MiddleContent: React.FC = () => {
     return (
         <div className={styles.middlecontent}>
             <div className={styles.middlecontent_event}>
-                <Image src={footballer} className={styles.middlecontent_event_image} alt="Футболист" />
+                <Image draggable={false} src={footballer} className={styles.middlecontent_event_image} alt="Футболист" />
                 <p className={styles.middlecontent_event_h}>Еженедельный футбольный челлендж</p>
-                <Image src={greenSector} className={styles.middlecontent_event_sector} alt="Зелёный сектор" />
+                <Image draggable={false} src={greenSector} className={styles.middlecontent_event_sector} alt="Зелёный сектор" />
             </div>
             <div className={styles.middlecontent_matches}>
                 <p className={styles.middlecontent_matches_h}>Предстоящие матчи</p>
                 <div className={styles.middlecontent_matches_list}>
-                    {[1,2,3,4,5,6,7,8,9].map(match => {
+                    {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].map(match => {
                         return (
                             <div key={match} className={styles.middlecontent_matches_list_match}>
                                 <p className={styles.middlecontent_matches_list_match_team}>NY Yorks</p>

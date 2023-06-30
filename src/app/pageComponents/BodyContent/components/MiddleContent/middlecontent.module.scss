@@ -2,17 +2,24 @@
 
 .middlecontent {
     margin-left: 25px;
-
+    height: 100%;
+    overflow: hidden;
     grid-column-start: 4;
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 13;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 
-    &_event {
+    &_event{
         padding-left: 25px;
-        grid-row-start: 1;
-        grid-row-end: 5;
         width: 100%;
+        height: 30%;
         background-color: $green;
         border-radius: 5px;
 
@@ -21,7 +28,7 @@
 
         &_image {
             margin-top: 1%;
-            width: 20%;
+            width: auto;
             height: auto;
         }
 
@@ -35,7 +42,7 @@
         }
 
         &_sector {
-            width: 33%;
+            width: auto;
             height: auto;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
@@ -43,10 +50,13 @@
     }
 
     &_matches {
-        margin-top: 40px;
+        padding-top: 40px;
+        height: 70%;
         display: flex;
         flex-direction: column;
+
         &_h {
+            margin-bottom: 20px;
             color: $black;
             font-size: $h3;
             font-weight: 500;
@@ -54,12 +64,10 @@
 
         &_list {
             overflow-y: auto;
-            margin-top: 20px;
-            max-height: 40vh;
-            height: fit-content;
+            max-height: 100%;
+            height: 100%;
 
-
-            &::-webkit-scrollbar{
+            &::-webkit-scrollbar {
                 display: none;
             }
 
@@ -91,7 +99,6 @@
         &_matches {
 
             &_list {
-                max-height: 53vh;
 
                 &_match {
                     padding-top: 4%;
@@ -108,18 +115,19 @@
     
         &_event {
             padding-left: 20px;
+            height: 25%;
     
             &_h {
+                margin-bottom: 16px;
                 font-size: $h2;
             }
         }
     
         &_matches {
-            margin-top: 30px;
+            padding-top: 30px;
+            height: 75%;
 
             &_list {
-                margin-top: 16px;
-
                 &_match {
                     padding-top: 4%;
                     padding-bottom: 4%;
@@ -135,6 +143,7 @@
     
         &_event {
             padding-left: 16px;
+            height: 20%;
     
             &_h {
                 font-size: $h3;
@@ -142,15 +151,15 @@
         }
     
         &_matches {
-            margin-top: 20px;
+            padding-top: 20px;
+            height: 80%;
 
             &_h {
+                margin-bottom: 12px;
                 font-size: $p1;
             }
 
             &_list {
-                margin-top: 12px;
-    
                 &_match {
     
                     &_team {
@@ -176,14 +185,20 @@
         }
     
         &_matches {
-            margin-top: 10px;
+            padding-top: 10px;
 
             &_h {
+                margin-bottom: 6px;
                 font-size: $p2;
             }
 
             &_list {
-                margin-top: 6px;
+                &_match {
+    
+                    &_team {
+                        font-size: $p2;
+                    }
+                }
             }
         }
     }
